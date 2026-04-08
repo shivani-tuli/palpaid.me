@@ -421,14 +421,7 @@ button {
 }
 
 .hero::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 120px;
-  background: linear-gradient(to top, var(--white), transparent);
-  z-index: 2;
+  display: none;
 }
 
 @keyframes heroGlow {
@@ -729,7 +722,7 @@ button {
    SECTION: INTRODUCING
    ============================================ */
 .section {
-  padding: var(--space-24) 0;
+  padding: var(--space-16) 0;
 }
 
 .section-dark {
