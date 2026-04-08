@@ -812,12 +812,19 @@ button {
   background: linear-gradient(135deg, rgba(124,58,237,0.1) 0%, transparent 60%);
 }
 
-/* Feature highlight cards */
+/* Feature highlight cards - 2x2 grid (inside text col) */
 .feature-highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-4);
   margin-top: var(--space-8);
+}
+
+/* Feature highlight cards - 4-column full-width row */
+.feature-highlights-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-6);
 }
 
 .feature-card {
@@ -1441,6 +1448,10 @@ button {
 
   .feature-highlights {
     grid-template-columns: 1fr;
+  }
+
+  .feature-highlights-row {
+    grid-template-columns: 1fr 1fr;
   }
 
   .team-grid {
