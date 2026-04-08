@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /pictures/
+
+Sitemap: https://palpaid.me/sitemap.xml
+
+# PalpAid - Breast Palpation Aid
+# https://palpaid.me
