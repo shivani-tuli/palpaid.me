@@ -152,32 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   });
 
-  // ---------- Device Image Fallback ----------
-  const deviceImg = document.getElementById('deviceImage');
-  if (deviceImg) {
-    deviceImg.addEventListener('error', () => {
-      // Replace with a gradient placeholder if image not found
-      deviceImg.parentElement.innerHTML = `
-        <div style="
-          width: 100%;
-          height: 400px;
-          background: linear-gradient(135deg, #7c3aed 0%, #d63384 100%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          gap: 16px;
-          color: white;
-          font-family: 'Space Grotesk', sans-serif;
-        ">
-          <span style="font-size: 80px;">🩺</span>
-          <span style="font-size: 24px; font-weight: 700;">PalpAid Device</span>
-          <span style="font-size: 14px; opacity: 0.7;">Hand-held Breast Palpation Aid</span>
-        </div>
-      `;
-    });
-  }
-
   // ---------- Counter Animation for Stats ----------
   const statHeadline = document.querySelector('.stat-headline');
   if (statHeadline) {
